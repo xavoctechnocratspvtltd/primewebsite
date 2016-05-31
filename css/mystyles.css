@@ -1090,6 +1090,9 @@ font-size:20px;
 .prime-category-detail > div > div > div > div > hr{
   margin-bottom: -15px !important;
 }
+.prime-category-detail table{
+  margin-top: -10px;
+}
 /*
 .prime-category-detail > div > div > div > table{
   margin-top:-10px !important;
@@ -1266,15 +1269,15 @@ table div.middle{
 .xepan-designer-addtocart button{
   width:100%;
   padding:8px !important;
-  background-color:rgb(247,167,7) !important;
+  /*background-color:rgb(247,167,7) !important;*/
   color: white !important;
   font-size: 18px;
-  border:2px solid #f7a707 !important;
+  /*border:2px solid #f7a707 !important;*/
   margin-top:10px ;
 }
 
 .xshop-designer-item-name{
-  font-size: 18px;
+  font-size: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
   clear: both;
@@ -1323,10 +1326,15 @@ table div.middle{
 }
 
 #category-items ul,#category-items li {
-  background-color:#ededed;
+  background-color:#f4f1ec;
 }
 
 .xepan-commerce-itemdetail-amount{
   padding-top:20px;
   padding-bottom: 20px; 
+}
+
+.xepan-customize-design-preview .head{
+  font-size: 20px;
+  padding-bottom: 10px;
 }
