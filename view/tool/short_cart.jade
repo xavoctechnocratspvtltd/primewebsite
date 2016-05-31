@@ -1,4 +1,5 @@
 .xepan-commerce-tool-cart(id='{$_name}', class='{$class}')
+  {$Content}
   ul
     li.dropdown.reset-margin.text-center(style="padding:0px;margin:0px;")
       a.dropdown-toggle.reset-margin(href='#', data-toggle='dropdown', role='button', aria-expanded='false' style="padding:0px;margin:0px;")
@@ -28,8 +29,10 @@
                         li {$item_code}
                         li {$qty}
                         li {$sales_amount}
+                {cart_item_remove_button_wrapper}
                 .col-lg-1
                   button.btn.btn-xs.btn-info.pull-right.xepan-commerce-cart-item-delete(data-cartid='{$id}') x
+                {/}
           {/}{/}
           {/lister}
         {not_found}
@@ -68,9 +71,8 @@
                 a.text-center(href="{$cart_detail_url}") View Cart
               {/}
             .col-md-6
-              {place_order_wrapper}
-              .btn.btn-warning.btn-block.xepan-cart-placeorder-btn
-                {$place_order}
-              {$Content}
+              {proceed_to_next_button_wrapper}
+              .btn.btn-block.xepan-cart-placeorder-btn
+                {$proceed_to_next_button}
               {/}
         {/footer}

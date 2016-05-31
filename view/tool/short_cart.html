@@ -1,5 +1,5 @@
 
-<div id="{$_name}" class="xepan-commerce-tool-cart {$class}">
+<div id="{$_name}" class="xepan-commerce-tool-cart {$class}">{$Content}
   <ul>
     <li style="padding:0px;margin:0px;" class="dropdown reset-margin text-center"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" style="padding:0px;margin:0px;" class="dropdown-toggle reset-margin"><span class="xepan-commerce-cart-item-count"> {total_count}0{/}</span> - Items<span class="caret"></span></a>
       <ul role="menu" style="width:400px; background:white" class="dropdown-menu dropdown-cart prime-cart"> 
@@ -28,10 +28,10 @@
                       </ul>
                     </div>
                   </div>
-                </div>
+                </div>{cart_item_remove_button_wrapper}
                 <div class="col-lg-1">
                   <button data-cartid="{$id}" class="btn btn-xs btn-info pull-right xepan-commerce-cart-item-delete">x</button>
-                </div>
+                </div>{/}
               </div></span></li>{/}{/}
           {/lister}
         </div>{not_found}
@@ -65,9 +65,8 @@
             <div class="col-md-6">{cart_detail_btn_wrapper}
               <div class="btn btn-success btn-block"><a href="{$cart_detail_url}" class="text-center">View Cart</a></div>{/}
             </div>
-            <div class="col-md-6">{place_order_wrapper}
-              <div class="btn btn-warning btn-block xepan-cart-placeorder-btn">{$place_order}</div>{$Content}
-              {/}
+            <div class="col-md-6">{proceed_to_next_button_wrapper}
+              <div class="btn btn-block xepan-cart-placeorder-btn">{$proceed_to_next_button}</div>{/}
             </div>
           </div>
         </li>{/footer}

@@ -18,6 +18,12 @@ div(id='{$_name}' class="{$class} row" style="{$style}")
 		{original_price_wrapper}
 		li.xepan-commerce-tool-item-original-price {$original_price}
 		{/}
+		{specification_wrapper}
+		li.xepan-commerce-tool-item-specification Rakesh
+			{specification}
+			{$id}:: {$name}::{$value}
+			{/}
+		{/}
 		{personalizedbtn_wrapper}
 		li
 			div(data-xsnbitemid="{$id}")

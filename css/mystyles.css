@@ -9,12 +9,12 @@ height:38px !important;
 width:30px !important;
 background-color:#ff7d23 !important;
 }
-.xhop-itemdetail-name > h1{
+.xepan-commerce-itemdetail-name > h1{
 color:white !important;
 padding:5px;
 font-size:18px;
 }
-.xhop-itemdetail-name, .p-gradient-background{
+.xepan-commerce-itemdetail-name, .p-gradient-background{
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef7e1a+72,ffffff+72,ffffff+73,f6a607+73,f6a607+79,fdd490+80,f6a607+80,ffffff+80,ffffff+81,fdd490+81,fdd490+87,ffffff+87,ffffff+88,ffffff+88,d4ecfb+88,a2d9f6+94,ffffff+94,ffffff+95,a2d9f6+95 */
 background: rgb(239,126,26); /* Old browsers */
 background: -moz-linear-gradient(left, rgba(239,126,26,1) 72%, rgba(255,255,255,1) 72%, rgba(255,255,255,1) 73%, rgba(246,166,7,1) 73%, rgba(246,166,7,1) 79%, rgba(253,212,144,1) 80%, rgba(246,166,7,1) 80%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 81%, rgba(253,212,144,1) 81%, rgba(253,212,144,1) 87%, rgba(255,255,255,1) 87%, rgba(255,255,255,1) 88%, rgba(255,255,255,1) 88%, rgba(212,236,251,1) 88%, rgba(162,217,246,1) 94%, rgba(255,255,255,1) 94%, rgba(255,255,255,1) 95%, rgba(162,217,246,1) 95%); /* FF3.6+ */
@@ -88,14 +88,14 @@ font-family:Times;
 padding:2px; 
 }
 
-.xshop-item-paginator{
+.xepan-commerce-item-paginator{
   margin-top:10px;
   width:99%; 
   background-color:#D4ECFB !important;
   border: 1px solid #dadde0;
 }
 
-.xshop-item-paginator > div{
+.xepan-commerce-item-paginator > div{
   padding: 0.5em !important;
   border-radius: 0px !important;
   width: 100%;
@@ -103,7 +103,7 @@ padding:2px;
   margin:0 auto 0px auto !important;
 }
 
-.xshop-item-paginator a{
+.xepan-commerce-item-paginator a{
     background-color:   #EBECEC !important;
     border: 1px solid #A2D9F6;
     border-radius: 3px !important;
@@ -111,28 +111,25 @@ padding:2px;
     font-weight: bold;
     padding: 4px 10px 4px 10px !important;
 }
-.xshop-item-paginator a.ui-state-active {
+.xepan-commerce-item-paginator a.ui-state-active {
    color:red !important;
 }
 
-.xshop-category-name{
+.xepan-commerce-category-name{
    border-right: 1px solid white;
    color: white;
-   font-weight:bold;
-   width:80%;
    background-color:#EF7E1A;
-   padding:7px;
    float:left;
-  font-size:17px;
+   padding: 5px;
+   font-size:18px;
 }
-.xshop-category-item-count{
+.xepan-commerce-category-item-count{
     border-left: 2px solid white;
-   font-weight:bold;
-   padding:5px;
    float:left;
    background-color:#44C0F0;
-   width:20%;
-   font-size:17px;
+   padding: 5px;
+   font-size:18px;
+   text-align: right;
 }
 
 .xshop-category-item-count:after {
@@ -575,10 +572,7 @@ border-radius: 0px !important;
 font-family:Lato !important;
 }
 
-.xshop-item-personalize{
-  float:right;
-}
-.xshop-item-personalize,.xshop-item-personalize > button,.xshop-item-addtocart > button{
+.xepan-commerce-item-personalize,.xepan-commerce-item-personalize > button,.xshop-item-addtocart > button{
 background-image: url("../image/site/print_on_click_button_personalize.png");
 background-repeat: no-repeat;
 width:auto !important;
@@ -593,7 +587,13 @@ background-color:#f7a707;
 color:white;
 }
 
-.xshop-item-personalize > button:hover,.xshop-item-personalize:hover{
+.commerce-personalize-button-wrapper{
+  text-align: right;
+}
+.commerce-personalize-button-wrapper button{
+  border: 0px !important; 
+}
+.xepan-commerce-item-personalize > button:hover,.xepan-commerce-item-personalize:hover{
 /*color:white;*/
 background-size:30px;
 }
@@ -606,19 +606,19 @@ background-size:30px;
     background: white;
 }
 
-.xshop-item-personalize > button:active{
+.xepan-commerce-item-personalize > button:active{
   transform: translate(0px, 5px);
   -webkit-transform: translate(0px, 5px);
   box-shadow: 0px 1px 0px 0px;
 }
-.xshop-item-personalize,.xshop-item-personalize > button{
+.xepan-commerce-item-personalize,.xepan-commerce-item-personalize > button{
  background-image:url('../image/site/print_on_click_button_personalize.png'); 
  background-position:right; 
  background-size:25px;
  padding-right:35px;
 }
 
-.xepan-user-panel button,.prime-scan button, .xshop-item-personalize{
+.xepan-user-panel button,.prime-scan button, .xepan-commerce-item-personalize{
     backface-visibility: hidden;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     display: inline-block;
@@ -630,7 +630,7 @@ background-size:30px;
    -webkit-border-radius:0px;
     border-radius:0px !important;
 }
-.xepan-user-panel button:before, .prime-scan button:before, .xshop-item-personalize:before{
+.xepan-user-panel button:before, .prime-scan button:before, .xepan-commerce-item-personalize:before{
     background: none repeat scroll 0 0 #f7a707;
     bottom: 0;
     content: "";
@@ -645,11 +645,11 @@ background-size:30px;
     transition-timing-function: ease-out;
     z-index: -1;
 }
-.xepan-user-panel button:hover, .prime-scan button:hover, .hvr-bounce-to-bottom:focus, .hvr-bounce-to-bottom:active, .xshop-item-personalize :hover, .xshop-item-personalize :focus, .xshop-item-personalize:active{
+.xepan-user-panel button:hover, .prime-scan button:hover, .hvr-bounce-to-bottom:focus, .hvr-bounce-to-bottom:active, .xepan-commerce-item-personalize :hover, .xepan-commerce-item-personalize :focus, .xepan-commerce-item-personalize:active{
   cursor:pointer;
 }
 
-/*.xepan-user-panel button:hover:before, .prime-scan button:hover:before, .prime-scan button:focus:before, .prime-scan button:active:before, .xshop-item-personalize:hover:before, .xshop-item-personalize:focus:before, .xshop-item-personalize:active:before  {
+/*.xepan-user-panel button:hover:before, .prime-scan button:hover:before, .prime-scan button:focus:before, .prime-scan button:active:before, .xepan-commerce-item-personalize:hover:before, .xepan-commerce-item-personalize:focus:before, .xepan-commerce-item-personalize:active:before  {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
@@ -1263,11 +1263,6 @@ table div.middle{
   padding: 7px 3px 5px 2px;
 }
 
-/*for prime*/
-.xepan-commerce-tool-item-original-price{
-  display: none;
-}
-
 .xepan-designer-addtocart button{
   width:100%;
   padding:8px !important;
@@ -1313,4 +1308,25 @@ table div.middle{
     border-color: #ccc;
     height: 40px;
     color: #cccc;
+}
+
+#category-items .xepan-commerce-item{
+  height:270px;
+}
+
+#category-items ul{
+  padding-right:5px; 
+  outline: 5px solid white;
+}
+#category-items .list-group-item{
+  border: 0px solid !important;
+}
+
+#category-items ul,#category-items li {
+  background-color:#ededed;
+}
+
+.xepan-commerce-itemdetail-amount{
+  padding-top:20px;
+  padding-bottom: 20px; 
 }
