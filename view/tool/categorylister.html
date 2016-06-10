@@ -1,0 +1,13 @@
+<div id="{$_name}" class="row {$class}" style="{$style}" >
+{category_list}
+  <ul class="sky-mega-menu sky-mega-menu-anim-slide sky-mega-menu-response-to-stack">
+    {rows}{row}
+    <li class="xshop-category" aria-haspopup="true" data-id='{$id}'>
+    	<a href="?page=category&amp;xsnb_category_id={$id}">
+        	{$name}
+        	<div class="grid-container3">
+                {$nested_category}
+            </div>
+    {/}{/}
+{/category_list}
+</div>
