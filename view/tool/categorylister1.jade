@@ -1,0 +1,54 @@
+.container(id="{$_name}"  class=' {$class}' style=' {$style}')
+  // Begin Navbar
+  nav.navbar.navbar-default(role='navigation')
+    .navbar-header
+      button.navbar-toggle.hidden-lg.hidden-md(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      //- a.navbar-brand(href='index.html') Your Logo Here
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      ul.nav.navbar-nav
+        ul.nav.navbar-nav
+        {category_list}
+        {rows}{row}
+        li.dropdown-submenu(data-id='{$id}')
+          a.dropdown-toggle(href="{$url}" , tabindex='-1') {$name} 
+            //- b.caret
+          ul.dropdown-menu
+            {$nested_category}
+        {/}{/}
+        {/}
+        li.dropdown
+          a#test1.dropdown-toggle(href='#', data-toggle='dropdown')
+            | Top Level 
+            b.caret
+          ul.dropdown-menu
+            li.dropdown-submenu
+              a(tabindex='-1', href='#') To 2nd
+              ul.dropdown-menu
+                li.dropdown-submenu
+                  a(href='#') 2nd to 3rd
+                  ul.dropdown-menu
+                    li
+                      a(href='#') 3rd level
+script.
+  $(document).ready(function() {
+    $( ".dropdown-submenu" ).hover(function(event) {
+        // stop bootstrap.js to hide the parents
+        event.stopPropagation();
+        // hide the open children
+        $( this ).find(".dropdown-submenu").removeClass('open');
+        // add 'open' class to all parents with class 'dropdown-submenu'
+        $( this ).parents(".dropdown-submenu").addClass('open');
+        // this is also open (or was)
+        $( this ).toggleClass('open');
+    });
+    
+  });
+style.
+  .dropdown-submenu{position:relative;}
+  .dropdown-submenu>.dropdown-menu{top:100%;left:0;margin-top:2px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
+  .dropdown-submenu:hover>.dropdown-menu{display:block;}
+  .dropdown-submenu>a:after{transform:rotate(90deg); display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#cccccc;margin-top:5px;margin-right:-10px;} 

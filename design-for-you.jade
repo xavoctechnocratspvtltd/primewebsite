@@ -1,0 +1,18 @@
+div(id='{$_name}')
+div.container.width-90
+	div.row
+		div.col-lg-12.col-md-12.col-sm-12
+			//- item description
+			div.xepan-component.xepan-serverside-component(xepan-component="xepan/commerce/Tool_Item_Detail" layout="tab"
+			show_name="true" 
+			show_description="true"
+			personalized_button_label='Personalize'
+			personalized_page='productdesigner'
+			show_customfield="true"
+			show_specification="true"
+			specification_layout="specification"
+			show_qtyform="true"
+			show_addtocart="true"
+			addtocart_button_label="Add To Cart"
+			show_item_upload="true"
+			)

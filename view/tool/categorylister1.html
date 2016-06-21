@@ -1,0 +1,53 @@
+
+<div id="{$_name}" style=" {$style}" class="container  {$class}">
+  <!-- Begin Navbar-->
+  <nav role="navigation" class="navbar navbar-default">
+    <div class="navbar-header">
+      <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="navbar-toggle hidden-lg hidden-md"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+    </div>
+    <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav"></ul>{category_list}
+        {rows}{row}
+        <li data-id="{$id}" class="dropdown-submenu"><a href="{$url}" tabindex="-1" class="dropdown-toggle">{$name} </a>
+          <ul class="dropdown-menu">{$nested_category}</ul>
+        </li>{/}{/}
+        {/}
+        <li class="dropdown"><a id="test1" href="#" data-toggle="dropdown" class="dropdown-toggle">Top Level <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu"><a tabindex="-1" href="#">To 2nd</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu"><a href="#">2nd to 3rd</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">3rd level</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<script>
+  $(document).ready(function() {
+    $( ".dropdown-submenu" ).hover(function(event) {
+        // stop bootstrap.js to hide the parents
+        event.stopPropagation();
+        // hide the open children
+        $( this ).find(".dropdown-submenu").removeClass('open');
+        // add 'open' class to all parents with class 'dropdown-submenu'
+        $( this ).parents(".dropdown-submenu").addClass('open');
+        // this is also open (or was)
+        $( this ).toggleClass('open');
+    });
+    
+  });
+</script>
+<style>
+  .dropdown-submenu{position:relative;}
+  .dropdown-submenu>.dropdown-menu{top:100%;left:0;margin-top:2px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
+  .dropdown-submenu:hover>.dropdown-menu{display:block;}
+  .dropdown-submenu>a:after{transform:rotate(90deg); display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#cccccc;margin-top:5px;margin-right:-10px;} 
+</style>
