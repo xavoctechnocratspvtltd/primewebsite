@@ -1111,6 +1111,9 @@ font-size:20px;
   z-index: 20 !important;
 }
 
+.xshop-category > a{
+  line-height:1.6em;
+}
 .carousel-caption{
   z-index: 0 !important;
 }
