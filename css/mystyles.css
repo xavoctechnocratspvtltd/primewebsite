@@ -1387,3 +1387,9 @@ width:100%;
 .reset-cal-padding .col-md-12, .reset-cal-padding .col-sm-12, .reset-cal-padding .col-lg-12{
 padding:0px;
 }
+.xepan-login-panel .jumbotron{
+display:none;
+}
+.xepan-login-panel input{
+padding-left:10px;
+}
