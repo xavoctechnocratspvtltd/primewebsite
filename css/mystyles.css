@@ -148,13 +148,21 @@ background-color:#CFEFFC;
 .p-topbar-row{
 font-size :16px;
 }
-.p-search ::-webkit-input-placeholder {
-color: white !important ; 
-}
-.p-search ::-moz-placeholder {
-color: white !important ; 
+.p-topbar-row{
+  width:92% !important;
 }
 
+.p-search ::-webkit-input-placeholder {
+color: black !important ; 
+}
+.p-search ::-moz-placeholder {
+color: black !important ; 
+}
+.p-search input{
+  font-size:14px;
+  color:black !important;
+  padding:5px;
+}
 .sky-mega-menu li li a{
 padding:0 12px !important;
 }
@@ -345,8 +353,9 @@ background-color: #44c0f0;
 .p-search  input {
 background-color: #FFCE8E;
 color: white;
-font-weight:bold;
+font-weight:normal;
 height: 35px;
+width:100%;
 }
 
 .atk-table input[placeholder]{
@@ -539,7 +548,7 @@ margin-bottom:30px;
 .p-header-middle-line > h3{
 text-transform: uppercase;
 margin: 0 auto; 
-padding:0 10px; 
+padding:3px; 
 font-size:20px;
 width:25% !important;
 background-color:#fff !important;
@@ -564,8 +573,7 @@ width:100% !important;
 /*ALL Input Box Setup*/
 
 .xepan-user-panel input[type="text"], .xepan-user-panel input[type="password"], .xepan-user-panel input[type="number"], .xepan-user-panel textarea, .prime-scan input[type="text"], .prime-scan input[type="password"], .prime-scan input[type="number"], .prime-scan textarea{
-display: block; 
-font-size: 18px;   
+display: block;  
 appearance: none;  
 box-shadow: none; 
 border-radius: 0px !important;
@@ -828,7 +836,8 @@ height:230px;
   width: 40%;
 }
 .footer-menu{
-  padding:10px;
+  padding-top:10px;
+  padding-bottom:10px;
 }
 
 .footer h3{
@@ -1345,4 +1354,36 @@ padding-top:10px;
 
 .category-information hr{
 margin-bottom:-15px !important;
+}
+
+.xepan-addtocartbutton-multi-step-wizard input,.xepan-addtocartbutton-multi-step-wizard select{
+width:50%;
+
+}
+.xepan-addtocartbutton-multi-step-wizard .uploaded_files div{
+width:100%;
+}
+.xepan-addtocartbutton-multi-step-wizard fieldset p, .xepan-addtocartbutton-multi-step-wizard .atk-actions{
+  margin-top:10px;
+}
+
+@media screen and (max-width: 699px) and (min-width: 320px) {
+    .xepan-addtocartbutton-multi-step-wizard input,.xepan-addtocartbutton-multi-step-wizard select{
+		width:100%;
+      	font-size:12px;
+    }
+}
+.termandcondition .p-header-middle-line h3{
+  width:400px !important;
+}
+@media screen and (max-width: 699px) and (min-width: 0px) {
+  .p-header-middle-line h3{
+    width: 100% !important;
+  }
+  .termandcondition .p-header-middle-line h3{
+    width:100% !important;
+  }
+}
+.reset-cal-padding .col-md-12, .reset-cal-padding .col-sm-12, .reset-cal-padding .col-lg-12{
+padding:0px;
 }
