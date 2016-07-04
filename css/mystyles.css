@@ -1342,3 +1342,7 @@ table div.middle{
 padding-top:10px;
   padding-bottom:10px;
 }
+
+.category-information hr{
+margin-bottom:-15px !important;
+}
