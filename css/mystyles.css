@@ -1393,3 +1393,7 @@ display:none;
 .xepan-login-panel input{
 padding-left:10px;
 }
+
+.xshop-item-image-block img{
+  width:100% !important;
+}
