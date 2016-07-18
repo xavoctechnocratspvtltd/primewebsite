@@ -14,7 +14,16 @@ color:white !important;
 padding:5px;
 font-size:18px;
 }
-.xepan-commerce-itemdetail-name, .p-gradient-background{
+.item-count{
+  background-color:rgba(152, 217, 246,1);
+  font-weight:bold;
+}
+.prime-category-detail .category-name,.item-count{
+  padding-top:5px;
+  padding-bottom:10px;
+  color:white;
+}
+.xepan-commerce-itemdetail-name, .p-gradient-background,.prime-category-detail .category-name{
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef7e1a+72,ffffff+72,ffffff+73,f6a607+73,f6a607+79,fdd490+80,f6a607+80,ffffff+80,ffffff+81,fdd490+81,fdd490+87,ffffff+87,ffffff+88,ffffff+88,d4ecfb+88,a2d9f6+94,ffffff+94,ffffff+95,a2d9f6+95 */
 background: rgb(239,126,26); /* Old browsers */
 background: -moz-linear-gradient(left, rgba(239,126,26,1) 72%, rgba(255,255,255,1) 72%, rgba(255,255,255,1) 73%, rgba(246,166,7,1) 73%, rgba(246,166,7,1) 79%, rgba(253,212,144,1) 80%, rgba(246,166,7,1) 80%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 81%, rgba(253,212,144,1) 81%, rgba(253,212,144,1) 87%, rgba(255,255,255,1) 87%, rgba(255,255,255,1) 88%, rgba(255,255,255,1) 88%, rgba(212,236,251,1) 88%, rgba(162,217,246,1) 94%, rgba(255,255,255,1) 94%, rgba(255,255,255,1) 95%, rgba(162,217,246,1) 95%); /* FF3.6+ */
@@ -664,7 +673,7 @@ background-size:30px;
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }*/
 
-.prime-scan *{
+.prime-scan *:not(.glyphicon){
 font-family: Lato !important; 
 border-radius:0 !important;
 }
@@ -1175,14 +1184,17 @@ table div.middle{
   border:0px;
   background-color:white;
   width:100%;
-  padding:5px;
-  font-size:15px;
 }
 
-.member-acount-left-panel button.active{
-  background-color:#ffb347;
-  color:white;
-  font-weight: bold;
+//.member-acount-left-panel button.active{
+  //background-color:#ffb347;
+  //color:white;
+  //font-weight: bold;
+//}
+
+.member-acount-left-panel .list-group-item{
+	padding:0px !important;
+  	margin:0px !important;
 }
 .member-acount-left-panel button:hover{
   background-color:#ffcc33;
