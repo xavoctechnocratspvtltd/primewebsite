@@ -21,6 +21,7 @@
       });
     </script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+	<script src="./websites/www/www/js/jquery.fancybox.js" ></script>
     xEpan-ATK-Header-End-->
 
     <script src="js/bootstrap.min.js"></script>
@@ -28,7 +29,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <link href="css/common.css" rel="stylesheet" type="text/css" />
         <link href="css/style.css" type="text/css" rel="stylesheet" />
-
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />
 
     <link href="css/quickweb.css" rel="stylesheet" type="text/css" />
      <!-- <link href="fonts/style.css" rel="stylesheet" type="text/css" />    -->
@@ -169,5 +170,12 @@
     var bootstrapButton = $.fn.button.noConflict(); // return $.fn.button to previously assigned value
 $.fn.bootstrapBtn = bootstrapButton;            // give $().bootstrapBtn the Bootstrap functionality
 $(".dropdown-toggle").dropdown();
+$(document).ready(function() {
+     $(".litebox-image").fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none',
+    });
+    
+});
 </script>
 </html>
