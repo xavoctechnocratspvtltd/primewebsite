@@ -592,7 +592,7 @@ font-family:Lato !important;
 .xepan-commerce-item-personalize,.xepan-commerce-item-personalize > button,.xshop-item-addtocart > button{
 background-image: url("../image/site/print_on_click_button_personalize.png");
 background-repeat: no-repeat;
-width:auto !important;
+/*width:auto !important;*/
 /*color:#f7a707;*/
 padding:5px 5px;
 font-size:15px;
@@ -1104,7 +1104,9 @@ font-size:20px;
 .prime-page-container{
   margin-top: 30px;
 }
-
+.prime-page-container > .width-90{
+	width:100% !important;
+}
 .prime-category-detail > div > div > div > div > hr{
   margin-bottom: -15px !important;
 }
@@ -1303,6 +1305,7 @@ table div.middle{
   clear: both;
   padding-top:10px;
   padding-bottom:10px;
+  text-align:center;
 }
 .xshop-desiner-tool-canvas{
   margin: 0 auto;
@@ -1384,6 +1387,13 @@ width:100%;
 		width:100%;
       	font-size:12px;
     }
+  .p-topbar-row > div{
+  	padding:0px;
+    text-align:center;
+  }
+  .xcart-icon{
+  	width:100%;
+  }
 }
 .termandcondition .p-header-middle-line h3{
   width:400px !important;
@@ -1408,4 +1418,8 @@ padding-left:10px;
 
 .xshop-item-image-block img{
   width:100% !important;
+}
+
+.xepan-commerce-tool-cart-item-row tr{
+  vertical-align: top !important;
 }
