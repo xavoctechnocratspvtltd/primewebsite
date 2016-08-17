@@ -1430,3 +1430,14 @@ padding-left:10px;
   width:30px;
   color:white;
 }
+
+.xepan-select-your-location-form select{
+	border:0px;
+  	background-color:white;
+  	border:1px solid #ccc;
+}
+.xepan-select-your-location-form option{
+  background-color:white;
+  border-bottom:1px solid #ccc;
+  padding:5px;
+}
