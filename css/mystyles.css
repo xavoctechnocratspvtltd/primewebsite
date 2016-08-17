@@ -167,11 +167,7 @@ color: black !important ;
 .p-search ::-moz-placeholder {
 color: black !important ; 
 }
-.p-search input{
-  font-size:14px;
-  color:black !important;
-  padding:5px;
-}
+
 .sky-mega-menu li li a{
 padding:0 12px !important;
 }
@@ -229,7 +225,7 @@ height:26px !important;
   background-color: #303136 !important;
     border: medium none;
     border-radius: 0;
-    color:#fff;
+    color:#fff !important;
 }
 
 .nav-tabs li{
@@ -358,13 +354,6 @@ background-color: #44c0f0;
 }
 .p-search{
   margin-top:30px;
-}
-.p-search  input {
-background-color: #FFCE8E;
-color: white;
-font-weight:normal;
-height: 35px;
-width:100%;
 }
 
 .atk-table input[placeholder]{
@@ -1422,4 +1411,22 @@ padding-left:10px;
 
 .xepan-commerce-tool-cart-item-row tr{
   vertical-align: top !important;
+}
+
+.xepan-commerce-search-tool form .atk-form-row{
+	display:table;
+  	width:100% !important;
+}
+.xepan-commerce-search-tool input{
+	border:1px solid #f3f3f3;
+	padding-bottom:13px;
+    padding:6px;
+}
+
+.xepan-commerce-search-tool .atk-button{
+ background-color:#44c0f0;
+  height:34px !important;
+  border:0px;
+  width:30px;
+  color:white;
 }
