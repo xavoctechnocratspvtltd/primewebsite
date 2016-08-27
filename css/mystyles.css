@@ -22,6 +22,7 @@ font-size:18px;
   padding-top:5px;
   padding-bottom:10px;
   color:white;
+  font-size:15px;
 }
 .xepan-commerce-itemdetail-name, .p-gradient-background,.prime-category-detail .category-name{
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef7e1a+72,ffffff+72,ffffff+73,f6a607+73,f6a607+79,fdd490+80,f6a607+80,ffffff+80,ffffff+81,fdd490+81,fdd490+87,ffffff+87,ffffff+88,ffffff+88,d4ecfb+88,a2d9f6+94,ffffff+94,ffffff+95,a2d9f6+95 */
@@ -242,10 +243,9 @@ height:26px !important;
 }
 
 .pading{
-  padding: 5px 3px 11px 8px;
+  padding: 8px 14px 11px 14px;
 }
 .tab-content{
-  padding:3px 0px 0px 8px;
   
   border: 2px #99ccff;
   box-shadow: 0 1px 3px rgba(0,0,0,.25);
@@ -1017,6 +1017,7 @@ height: auto !important;
 .atk-cells > .atk-cell{
   display: table-cell;
   vertical-align: middle;
+  width:100%;
 }
 
 .atk-align-right{
@@ -1330,8 +1331,9 @@ table div.middle{
 }
 
 #category-items ul{
-  padding-right:5px; 
-  outline: 5px solid white;
+  padding-right:10px; 
+  outline: 10px solid white;
+  margin-top:5px;
 }
 #category-items .list-group-item{
   border: 0px solid !important;
@@ -1362,6 +1364,7 @@ margin-bottom:-15px !important;
 
 .xepan-addtocartbutton-multi-step-wizard input,.xepan-addtocartbutton-multi-step-wizard select{
 width:50%;
+  padding:3px 0px;
 
 }
 .xepan-addtocartbutton-multi-step-wizard .uploaded_files div{
@@ -1440,4 +1443,25 @@ padding-left:10px;
   background-color:white;
   border-bottom:1px solid #ccc;
   padding:5px;
+}
+.xepan-addtocartbutton-multi-step-wizard label{
+  font-size:15px;
+}
+.tab-content fieldset{
+  padding:5px 3px 20px 13px;
+}
+.tablepadding .row{
+  padding:20px;
+  border:1px solid #cbcbcb;
+  font-size:16px;
+}
+.canvascolor{
+  background-color:#efefef !important;
+}
+.moreprice{
+  margin:10px 91px;
+  text-align: center;
+  color: #00a0e3;
+  background-color:#fff;
+  border:none;
 }
