@@ -9,6 +9,8 @@
     </div>
   </div>
   <div class="row xepan-commerce-itemdetail-amount xshop-item">
+    <div class="col-lg-8 col-md-8 col-sm-8">
+    </div>
     <div class="col-md-4 col-lg-4 col-sm-4">{personalizedbtn_wrapper}
       <div data-xsnbitemid="{$id}" class="commerce-personalize-button-wrapper">{$personalizedbtn}</div>{/}
     </div>
@@ -35,15 +37,32 @@
         </div>{/}
         {addtocart_wrapper}
         <div id="tab-Price" class="tab-pane">
-	 <div class="col-lg-8 col-md-8 col-sm-8">{sale_price_wrapper}
-      <div>Amount
-        <div class="xepan-commerce-tool-item-sale-price">{$sale_price}</div>
-      </div>{/}
-      {original_price_wrapper}
-      <div class="xepan-commerce-tool-item-original-price">{$original_price}</div>{/}
-      {shipping_charge_wrapper}
-      <div class="xepan-commerce-tool-item-shipping-charge">{$shipping_charge}</div>{/}
-    </div>
+          <div class="row xepan-commerce-itemdetail-amount xshop-item">
+            <div class="col-lg-8 col-md-8 col-sm-8">{sale_price_wrapper}
+              <div> 
+                <div class="row">
+                  <div class="col-lg-3 col-md-3 col-sm-3 xshop-item-amount-word-size">Amount</div>
+                  <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="xepan-commerce-tool-item-sale-price xshop-item-amount-rate-size">{$sale_price}</div>
+                  </div>
+                </div>
+              </div>{/}
+              {original_price_wrapper}
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3"></div>
+                <div class="col-lg-8 col-md-8 col-sm-8">
+                  <div class="xepan-commerce-tool-item-original-price">{$original_price}</div>
+                </div>
+              </div>{/}
+              {shipping_charge_wrapper}
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3"></div>
+                <div class="col-lg-8 col-md-8 col-sm-8">
+                  <div class="xepan-commerce-tool-item-shipping-charge">{$shipping_charge}</div>
+                </div>
+              </div>{/}
+            </div>
+          </div>
           <div data-xsnbitemid="{$id}" data-name="{$name}" class="xshop-item-custom-field-name xshop-item-addtocart">{$Addtocart}</div>
         </div>{/}
         {item_upload_wrapper}
