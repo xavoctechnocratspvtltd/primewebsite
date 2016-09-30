@@ -1323,7 +1323,6 @@ table div.middle{
     border: 1px solid;
     border-color: #ccc;
     height: 40px;
-    color: #cccc;
 }
 
 #category-items .xepan-commerce-item{
@@ -1332,7 +1331,7 @@ table div.middle{
 
 #category-items ul{
   padding-right:10px; 
-  outline: 10px solid white;
+  outline: 12px solid white;
   margin-top:5px;
 }
 #category-items .list-group-item{
@@ -1364,7 +1363,7 @@ margin-bottom:-15px !important;
 
 .xepan-addtocartbutton-multi-step-wizard input,.xepan-addtocartbutton-multi-step-wizard select{
 width:50%;
-  padding:3px 0px;
+  padding:4px 0px;
 
 }
 .xepan-addtocartbutton-multi-step-wizard .uploaded_files div{
@@ -1435,11 +1434,18 @@ padding-left:10px;
 }
 
 .xepan-select-your-location-form select{
-	border:0px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+  	border:0px;
   	background-color:white;
   	border:1px solid #ccc;
 }
 .xepan-select-your-location-form option{
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   background-color:white;
   border-bottom:1px solid #ccc;
   padding:5px;
@@ -1580,4 +1586,66 @@ padding-left:10px;
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
+}
+
+.carousel-inner img{
+	width:100%;
+}
+
+.xepan-commerce-tool-item-shipping-charge {
+display:none;
+}
+
+.xshop-item.inner-multi-step-form-amount span{
+display:none;
+}
+
+.xshop-item-custom-field-name + div.row{
+display:none;
+}
+
+.xshop-item .item-amount-header{
+  float:left;
+  font-size:20px !important;
+  color:black !important;
+}
+.xepan-commerce-tool-item-sale-price{
+	margin-left:90px !important;
+	font-size:20px;
+}
+
+.xepan-custom-form-input-width input, textarea{
+ -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 10px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}  
+
+.xepan-custom-form-input-width input:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 10px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.atk-cells > .atk-actions > .atk-button{
+  margin-left:20%;
+  margin-top:15px;
+  padding:7px 40px;
+  background-color:#f7a707;
+  color:#fff;
+  border:1px solid;
+  font-weight:500;
+}
+
+.atk-cells > .atk-actions > .atk-button:hover{
+  margin-left:20%;
+  margin-top:15px;
+  padding:7px 40px;
+  background-color:#286090;
+  color:#fff;
 }
