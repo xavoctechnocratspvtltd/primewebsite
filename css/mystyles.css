@@ -13,6 +13,7 @@ background-color:#ff7d23 !important;
 color:white !important;
 padding:5px;
 font-size:18px;
+  max-width:70%;
 }
 .item-count{
   background-color:rgba(152, 217, 246,1);
@@ -20,9 +21,9 @@ font-size:18px;
 }
 .prime-category-detail .category-name,.item-count{
   padding-top:5px;
-  padding-bottom:10px;
+  padding-bottom:5px;
   color:white;
-  font-size:15px;
+  font-size:18px;
 }
 .xepan-commerce-itemdetail-name, .p-gradient-background,.prime-category-detail .category-name{
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef7e1a+72,ffffff+72,ffffff+73,f6a607+73,f6a607+79,fdd490+80,f6a607+80,ffffff+80,ffffff+81,fdd490+81,fdd490+87,ffffff+87,ffffff+88,ffffff+88,d4ecfb+88,a2d9f6+94,ffffff+94,ffffff+95,a2d9f6+95 */
@@ -220,6 +221,7 @@ height:26px !important;
 
 .nav-tabs > .active > a{
   background-color:#fdd490 !important;
+  border-radius:0px;
 }
 
 .nav-tabs > li > a:hover{
@@ -1332,7 +1334,7 @@ table div.middle{
 #category-items ul{
   padding-right:10px; 
   outline: 12px solid white;
-  margin-top:5px;
+  margin-top:12px;
 }
 #category-items .list-group-item{
   border: 0px solid !important;
@@ -1454,7 +1456,7 @@ padding-left:10px;
   font-size:15px;
 }
 .tab-content fieldset{
-  padding:5px 3px 20px 13px;
+  padding:5px 3px 20px 27px;
 }
 .tablepadding .row{
   padding:20px;
@@ -1473,8 +1475,7 @@ padding-left:10px;
 }
 
 .xshop-item-amount-rate-size{
-  font-size: 1.5em; 
-  margin-top: 2%;  
+  font-size: 1.5em;  
 }
 
 .xshop-item-amount-word-size{
@@ -1610,7 +1611,6 @@ display:none;
   color:black !important;
 }
 .xepan-commerce-tool-item-sale-price{
-	margin-left:90px !important;
 	font-size:20px;
 }
 
@@ -1648,4 +1648,20 @@ display:none;
   padding:7px 40px;
   background-color:#286090;
   color:#fff;
+}
+
+.xepan-designer-price-addtocart-section.crt select{
+    padding: 4px 0;
+    width: 80%;
+    height:40px !important;
+}
+.xepan-commerce-itemdetail-amount div{
+  font-size:18px;
+}
+.xepan-user-pwd input{
+ padding: 3px 5px; 
+}
+
+.xepan-user-pwd-lbl{
+ padding-bottom: 15px !important; 
 }
