@@ -1,1 +1,5 @@
 ﻿*{margin:0px;padding:0px;list-style:none;text-decoration:none;}
+.our-freelancer-content .img-responsive {
+    min-height: 150px;
+    width: auto;
+}
