@@ -175,7 +175,7 @@ padding:0 12px !important;
 }
 
 .grid-container3 li{
-  z-index: 30;
+  //z-index: 30;
 }
 
 .grid-container3 li a .sky-menu-thumbnail-name{
@@ -850,8 +850,12 @@ height:230px;
 }
 
 .zoomWrapper{
-  width: 100%;
+  width: 100%!important;
   overflow: hidden;
+}
+
+.category-name{
+	height:36px;
 }
 
 .zoomwrapper-img, .zoomWrapper img{
@@ -1120,7 +1124,7 @@ font-size:20px;
   font-size: 15px;
 }
 .xshop-category{
-  z-index: 20 !important;
+  //z-index: 20 !important;
 }
 
 .xshop-category > a{
@@ -1670,3 +1674,9 @@ display:none;
   padding:0px 7px;
   margin-top:2px;
 }
+
+/* custom form button class */
+.custom-form-button .atk-cells > .atk-actions > .atk-button{
+margin-left: 35%;
+}
+
