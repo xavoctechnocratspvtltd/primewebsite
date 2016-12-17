@@ -4,6 +4,22 @@ div(class="xepan-login-panel")
 	{/}
 
 	{logout_wrapper}
-	.small {$name} &nbsp;
-		a(href="{$logout_url}") logout
+	//- .small {$name} &nbsp;
+	//- 	a(href="{$logout_url}") logout
+	.btn-group
+		//- button.btn.btn-default.btn-xs.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+		.small.dropdown-toggle(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') {$name} &nbsp;
+			//- | Extra small button 
+			span.caret
+		ul.dropdown-menu
+			li(style="padding: 2px; border-bottom: 1px solid whitesmoke")
+				a(href="?page=member-account" style="text-decoration:none;" title="View Your Account")  
+					//- i(style="width: auto; max-width: 100%; background-image: url('image/icon/print_on_click_my_account_icon.png'); background-repeat: no-repeat; background-position: right center; color: rgb(0, 0, 0);")
+					i.glyphicon.glyphicon-user.pull-right(style="margin-top: 3px")
+					|My Account
+			li(style="padding: 2px; border-bottom: 1px solid whitesmoke")
+				a(href="{$logout_url}")
+					i.glyphicon.glyphicon-log-out.pull-right(style="margin-top: 3px")
+					|Logout
+	
 	{/}

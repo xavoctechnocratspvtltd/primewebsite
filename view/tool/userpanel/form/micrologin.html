@@ -1,4 +1,17 @@
-<div class="xepan-login-panel">{login_wrapper}<a href="{$login_url}" style= "cursor:pointer; cursor: hand; max-width:600px;">Login</a>{/}
+<!--<div class="xepan-login-panel">{login_wrapper}<a href="{$login_url}" style= "cursor:pointer; cursor: hand; max-width:600px;">Login</a>{/}
   {logout_wrapper}
   <div class="small">{$name} &nbsp;<a href="{$logout_url}" style= "cursor:pointer; cursor: hand; max-width:600px;">logout</a></div>{/}
+</div> -->
+
+
+<div class="xepan-login-panel">{login_wrapper}<a href="{$login_url}">Login</a>{/}
+  {logout_wrapper}
+  <div class="btn-group">
+    <div data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="small dropdown-toggle">{$name} &nbsp;<span class="caret"></span>
+    </div>
+    <ul class="dropdown-menu">
+      <li style="padding: 2px; border-bottom: 1px solid whitesmoke"><a href="?page=member-account" style="text-decoration:none;" title="View Your Account"> <i style="margin-top: 3px" class="glyphicon glyphicon-user pull-right"></i>My Account</a></li>
+      <li style="padding: 2px; border-bottom: 1px solid whitesmoke"><a href="{$logout_url}"><i style="margin-top: 3px" class="glyphicon glyphicon-log-out pull-right"></i>Logout</a></li>
+    </ul>
+  </div>{/}
 </div>
