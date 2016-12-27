@@ -1,26 +1,27 @@
 <div id="{$_name}" class="xepan-commerce-tool-cart {$class}">
   {$Content}
   {cart_container}
-  <ul>
-    <li style="padding:0px;margin:0px;" class="dropdown reset-margin text-center"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" style="padding:0px;margin:0px;" class="dropdown-toggle reset-margin"><span class="xepan-commerce-cart-item-count"> {total_count}0{/}</span> Items<span class="caret"></span></a>{lister_wrapper}
-      <ul role="menu" style="width:400px; background:white;text-align:left;" class="dropdown-menu dropdown-cart xepan-cart pull-right"> 
+  <ul class="manualdropdown">
+    <li style="padding:0px;margin:0px;" class="dropdown reset-margin text-center">
+      <a id="{$_name}dropdown" href="#" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" style="padding:0px;margin:0px;" class="dropdown-toggle reset-margin"><span class="xepan-commerce-cart-item-count"> {total_count}0{/}</span> Items<span class="caret"></span></a>{lister_wrapper}
+      <ul role="menu" aria-labelledby="{$_name}dropdown" style="width:400px; background:white;text-align:left;" class="dropdown-menu dropdown-cart xepan-cart pull-right"> 
         <div margin="10px 20px" class="scroll-item">{lister}
           <div style="margin:10px;" class="row">
             <div class="col-md-6" style="text-align:center;">Item</div>
             <div class="col-md-6">
-  <div class="row">
-    	<div class="col-md-6" style="text-align:right;">
-    	Qty	
-    </div>
-    <div class="col-md-6">
-    	Amount
-    </div>
-  </div>
-</div>
+              <div class="row">
+                	<div class="col-md-6" style="text-align:right;">
+                	Qty	
+                </div>
+                <div class="col-md-6">
+                	Amount
+                </div>
+              </div>
+            </div>
             <div class="col-md-1"></div>
           </div>{rows}{row}
-          <div id="item-{$id}" style="margin:0;margin-bottom:5px;" class="row xepan-commerce-tool-cart-item-row">
-            <div class="col-md-3 col-lg-3 col-sm-3">{canvas_wrapper}
+          <div id="item-{$id}" style="margin:0;margin-bottom:20px;border-bottom:2px solid #f3f3f3;" class="row xepan-commerce-tool-cart-item-row">
+            <div class="col-md-3 col-lg-3 col-sm-3" style="padding:0px;">{canvas_wrapper}
               <div data-width="{$width}" data-height="{$height}" data-trim="{$trim}" data-unit="{$unit}" data-design="{$design}" data-selected_layouts_for_print="{$selected_layouts_for_print}" data-item_id="{$item_id}" data-item_member_design_id="{$item_member_design_id}" data-item_name="{$item_name}" data-base_url="{$base_url}" data-calendar_starting_month="{$calendar_starting_month}" data-calendar_starting_year="{$calendar_starting_year}" data-calendar_event="{$calendar_event}" class="image-block">
                 <div id="canvas-cart-{$uniq_id}" style="width:100px;" class="customer-designer-image"></div>
               </div>{/canvas_wrapper}
@@ -92,5 +93,11 @@
         </li>{/footer}
       </ul>{/lister_wrapper}
     </li>
-  </ul>{/}
+  </ul>
+  <script type="text/javascript">
+    $('.manualdropdown').click(function(){
+      $(this).children('li.dropdown').toggleClass('open');
+    });
+  </script>
+  {/}
 </div>
