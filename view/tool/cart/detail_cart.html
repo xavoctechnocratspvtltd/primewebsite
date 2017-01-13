@@ -1,4 +1,3 @@
-
 <div id="{$_name}" class="xepan-commerce-tool-cart xepan-grid main-box clearfix atk-table atk-table-zebra atk-table-bordered {$class}">
   {$Content}
   {Pannel}
@@ -11,19 +10,18 @@
       <div class="main-box-body clearfix table">
         <table style="width:100%;" class="table table-hover">{header}
           <thead>{cols}{col}
-            <th style="min-width:15%;"><span>Image</span></th>
+            <th style="min-width:20%;"><span>Image</span></th>
             <th style="min-width:40%;"><span>Item</span></th>
             <th style="min-width:10%;"><span>Qty</span></th>
-            <th style="min-width:25%;"><span>Shipping Detail</span></th>
-            <th style="min-width:10%;text-align:right;"><span>Amount</span></th>
+            <th style="min-width:30%;text-align:right;"><span>Amount</span></th>
             <th></th>{/}{/}
           </thead>{/}
                     {$subheader}
           <tbody>{rows}{row}
             <tr data-id="{$id}" class="xepan-commerce-tool-cart-item-row {$odd_even}">{cols}
-              <td style="min-width:15%;">{canvas_wrapper}
+              <td style="min-width:20%;">{canvas_wrapper}
                 <div data-width="{$width}" data-height="{$height}" data-trim="{$trim}" data-unit="{$unit}" data-design="{$design}" data-selected_layouts_for_print="{$selected_layouts_for_print}" data-item_id="{$item_id}" data-item_member_design_id="{$item_member_design_id}" data-item_name="{$item_name}" data-base_url="{$base_url}" data-calendar_starting_month="{$calendar_starting_month}" data-calendar_starting_year="{$calendar_starting_year}" data-calendar_event="{$calendar_event}" class="image-block">
-                  <div id="canvas-cart-{$uniq_id}" style="width:100px;" class="customer-designer-image"></div>
+                  <div id="canvas-cart-{$uniq_id}" style="width:150px;" class="customer-designer-image"></div>
                 </div>{/canvas_wrapper}
                                 {image_wrapper}<img alt="{image}{/}" src="{$image_url}" onerror="this.src='vendor/xepan/commerce/templates/view/tool/cart/images/not-found.png'"/>{/image_wrapper}
               </td>
@@ -40,12 +38,13 @@
                 {$qty}
                 {/}{/}
               </td>
-              <td style="min-width:25%;">
+              <td style="min-width:30%;text-align:right;">
+				<div>{$currency} {$amount_including_tax}</div>
                 <div style="display:none;">Unit Price: {$currency} {unit_price}{/}</div>
                 <div> <strong>Shipping Charge:&nbsp;</strong>{$currency} {$shipping_charge_amount}</div>
                 <div><strong>Duration:&nbsp;</strong>{$shipping_duration_text}</div>
-              </td>
-              <td style="width:10%;text-align:right;">{$currency} {$amount_including_tax}</td>{cart_item_remove_button_wrapper}
+</td>
+              {cart_item_remove_button_wrapper}
               <td style="min-width:10%;padding-left:0px;padding-right:0px;">
                 <button data-cartid="{$id}" class="round-button-circle pull-right xepan-commerce-cart-item-delete">x</button>
               </td>{/}
